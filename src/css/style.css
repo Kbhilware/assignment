@@ -1,0 +1,232 @@
+/*icons*/
+.icons-property{
+    -webkit-mask-repeat: no-repeat!important;
+    -webkit-mask-size: cover!important;
+    -webkit-mask-position: center!important;
+    display: inline-block;
+}
+.play-icon{
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg width='31' height='35' viewBox='0 0 31 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M29.2098 16.0573C30.3385 16.709 30.3385 18.3383 29.2098 18.99L2.54251 34.3863C1.41374 35.038 0.0027771 34.2234 0.0027771 32.92V2.1273C0.0027771 0.823908 1.41374 0.0092876 2.54252 0.660985L29.2098 16.0573Z' fill='%232C5F52'/%3E%3C/svg%3E%0A");
+	background: #2C5F52;
+	font-size: 24px;
+	height: 42px;
+	width: 37px;
+	margin-left:10px;
+}
+
+.bannerText{
+	border-radius: 80.003px;
+	border: 1.702px dashed #2C5F52;
+	color: #2C5F52;
+	padding:2px 55px;
+	font-family: var(--bs-font-body);
+}
+.buttonGapBorder{
+	border-radius: 80.003px;
+	color: #fff;
+	padding:2px 55px;
+	border: 8px solid white;
+	margin: 1px;
+	position: relative;
+	background: #2C5F52;
+}
+.buttonGapBorder-wrap{
+	display: inline-block;
+	border-radius: 80.003px;
+	border: 1.702px dashed #2C5F52;
+	font-family: var(--bs-font-body);
+}
+.play-wrap{
+	border-radius: 62.647px;
+	border: 0.904px dashed #2C5F52;
+	background: rgba(44, 95, 82, 0.11);
+	width: 75px;
+	height: 75px;
+	text-align: center;
+	display: inline-block;
+	margin-left: 61px;
+}
+.bannerStrip{
+	border-radius: 80.003px;
+	border: 1.702px dashed #000;
+	
+
+}
+.bannerStripContent{
+	border-radius: 80.003px;
+	color: #000;
+	padding: 16px;
+	border: 8px solid white;
+	margin: 1px;
+	position: relative;
+	background: #FFC0A1;
+}
+.bannerStripContent ul{
+	margin: 0;
+	padding: 0;
+}
+
+.bannerStripContent li{
+	list-style: none;
+	font-size: 12.8px;
+	font-weight: 500;
+}
+.bannerStripContent li:last-child{
+	font-size: 9.6px;
+	font-weight: 400;	
+	width: 320px;
+}
+.signupStrip{
+	background: #F9FBFA;
+/*	background: #ff0;*/
+	width: calc(100% - 20px);
+	padding:10px 0;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.signupStrip h2{
+	color: #2C5F52;
+	font-family: Poppins;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 33px;
+}
+.signupStrip ul {
+  counter-reset: section;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.signupStrip ul li{
+	position: relative;
+	padding-left: 50px;
+}
+
+.signupStrip ul li::before {
+  counter-increment: section;
+  content: "0" counter(section);
+  font-family: var(--bs-font-body);
+  color: #000;
+  left: 0;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 400;
+	position: absolute;
+	line-height: 38px;
+
+}
+
+.signupStrip ul li h4{
+	font-size:15px;
+	font-family: var(--bs-font-body);
+	margin: 0;
+	white-space: nowrap;
+}
+.signupStrip ul li p{
+	font-size: 8px;
+	margin: 0;
+}
+.navbar-toggler{
+	width: 60px;
+	border:none;
+	position: relative;
+}
+.navbar-toggler .navbar-toggler-animation span{
+	height: 1px;
+	width: 100%;
+	background-color: #FFC0A1;
+	display: block;
+	margin-bottom: 8px;
+}
+.fnt-11{
+	font-size: 11px;
+}
+@media (max-width: 576px) {
+	.navbar-light .navbar-toggler{
+		color: unset !important;
+		box-shadow: unset !important;
+	}
+	.m-center{
+		text-align: center;
+		justify-content: center;
+	}
+	.btn-outline-primary{
+		padding:8px 26px
+	}
+	.play-wrap{
+		height: 45px;
+		width: 45px;
+		margin-left: 20px;
+	}
+	.play-icon{
+		height: 22px;
+		width: 17px;
+		margin-left: 4px;
+		
+	}
+	.bannerImg-top{
+		flex-wrap: wrap-reverse;
+	}
+	.navbar{
+		padding: 10px 0;
+	}
+	.navbar-collapse{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 60px;
+		background-color: var(--bs-white);
+		z-index: 9;
+		padding:0 15px 30px;
+	}
+	.bannerStripContent .d-flex{
+		display: block !important;
+		padding: 10px;
+		float: left;
+		width: 100%;
+	}
+	.bannerStripContent .d-flex li{
+		float: left;
+	}
+	.bannerStripContent .d-flex li:nth-child(2){
+		padding-left: 10px;
+    	width: calc(100% - 50px);
+	}
+	.bannerStripContent .d-flex li:nth-child(2) br{
+		display: none;
+	}
+	.bannerStripContent li:last-child{
+		width: unset;
+		text-align: center;
+		padding-top: 10px;
+	}
+	.signupStrip ul li::before{
+		left: 0;
+		width: 100%;
+		font-size: 22px;
+		/* text-align: center; */
+		top: 0;
+		line-height: 22px;
+	}
+	.signupStrip ul li{
+		padding:26px 0 20px 0;
+		text-align: center;
+	}
+	.signupStrip h2{
+		margin-bottom: 20px;
+	}
+	.signupStrip{
+		padding: 0;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.signupStrip ul li br{
+		display: none;
+	}
+}
+.clr{
+	clear: both;
+}
